@@ -125,6 +125,7 @@ class _CalculatorState extends State<Calculator> {
       else if( op == "div") ans = a~/b;
       setState((){
         output = ans.toString();
+        a = b = -1;
       });
     }
   }
